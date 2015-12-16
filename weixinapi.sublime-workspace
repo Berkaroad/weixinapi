@@ -1,0 +1,892 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pro",
+				"product6"
+			],
+			[
+				"prod",
+				"product5"
+			],
+			[
+				"r",
+				"Router	martini.Router ν"
+			],
+			[
+				"zf",
+				"zf-alert	ZURB Foundation 5 Alert"
+			],
+			[
+				"Conne",
+				"ConnectionString"
+			],
+			[
+				"produ",
+				"product4"
+			],
+			[
+				"json",
+				"jsonData"
+			],
+			[
+				"se",
+				"Serve	error ƒ"
+			],
+			[
+				"params",
+				"params	martini.Params ν"
+			],
+			[
+				"fm",
+				"fmt	 package ρ"
+			],
+			[
+				"Marsh",
+				"MarshalIndent	[]byte, error ƒ"
+			],
+			[
+				"u",
+				"RequestURI	string ν"
+			],
+			[
+				"fu",
+				"func (*Product)	func (...) {...} ʂ"
+			],
+			[
+				"Pro",
+				"Product	struct ʈ"
+			],
+			[
+				"fun",
+				"func	func {...} ʂ"
+			],
+			[
+				"t",
+				"type	Type"
+			],
+			[
+				"z",
+				"zf-clearing	ZURB Foundation 5 Clearing"
+			],
+			[
+				"h",
+				"h6	Tag"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"large",
+				"large-12"
+			],
+			[
+				"fix",
+				"fixed"
+			],
+			[
+				"med",
+				"medium-6"
+			],
+			[
+				"java",
+				"javascript:void"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"top",
+				"topbar"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"la",
+				"large-10"
+			],
+			[
+				"larg",
+				"large-4"
+			],
+			[
+				"col",
+				"columns"
+			],
+			[
+				"pur",
+				"pure-u- 	PureCSS class"
+			],
+			[
+				"pu",
+				"pure-g 	PureCSS class"
+			],
+			[
+				"p",
+				"pure-u- 	PureCSS class"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"ht",
+				"http-equiv	Attr"
+			],
+			[
+				"func",
+				"func http handler	func(rw, req) ʂ"
+			],
+			[
+				"ap",
+				"appList	map[int]App ν"
+			],
+			[
+				"a",
+				"Appid	int ν"
+			],
+			[
+				"pr",
+				"Println	n int, err error ƒ"
+			],
+			[
+				"ma",
+				"func main	func main {...} ʂ"
+			],
+			[
+				"Inde",
+				"IndexSearcher	interface ¡"
+			],
+			[
+				"Fiel",
+				"FieldIndex_NOT_ANALYZED	 Ɩ"
+			],
+			[
+				"Fields",
+				"FieldStore_YES	 Ɩ"
+			],
+			[
+				"fi",
+				"File	struct ʈ"
+			],
+			[
+				"funcFile",
+				"func (*FileFilter)	func (...) {...} ʂ"
+			],
+			[
+				"Index",
+				"IndexWriter	interface ¡"
+			],
+			[
+				"Scor",
+				"ScoreDocs	struct ʈ"
+			],
+			[
+				"imp",
+				"import	import (...) ʂ"
+			],
+			[
+				"old_",
+				"old_gopath"
+			],
+			[
+				"wwwr",
+				"wwwrootDir"
+			],
+			[
+				"www",
+				"wwwrootDir"
+			],
+			[
+				"ins",
+				"install_golang"
+			],
+			[
+				"li",
+				"ListenAndServe	error ƒ"
+			],
+			[
+				"ser",
+				"Serve	error ƒ"
+			],
+			[
+				"f",
+				"func http handler	func(rw, req) ʂ"
+			],
+			[
+				"s",
+				"ServeHTTP	 ƒ"
+			],
+			[
+				"status",
+				"StatusText	string ƒ"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "assis.go",
+			"settings":
+			{
+				"buffer_size": 2677,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "jsapi.go",
+			"settings":
+			{
+				"buffer_size": 1045,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "msgcrypt.go",
+			"settings":
+			{
+				"buffer_size": 9979,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "weixinapi.go",
+			"settings":
+			{
+				"buffer_size": 3092,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 227.0,
+		"last_filter": "ss:po",
+		"selected_items":
+		[
+			[
+				"ss:po",
+				"Set Syntax: PowerShell"
+			],
+			[
+				"a",
+				"GoSublime: Add/Remove package"
+			],
+			[
+				"ad",
+				"GoSublime: Add/Remove package"
+			],
+			[
+				"pcip",
+				"Package Control: Install Package"
+			],
+			[
+				"add",
+				"GoSublime: Add/Remove package"
+			],
+			[
+				"impo",
+				"GoSublime: Go to imports section"
+			],
+			[
+				"ip",
+				"Package Control: Install Package"
+			],
+			[
+				"pcrp",
+				"Package Control: Remove Package"
+			],
+			[
+				"p c",
+				"Package Control: Remove Package"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"pc",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"import",
+				"Snippet: Import"
+			],
+			[
+				"impor",
+				"GoSublime: Go to imports section"
+			],
+			[
+				"pc:ip",
+				"Package Control: Install Package"
+			],
+			[
+				"go",
+				"GoSublime: Goto Definition"
+			],
+			[
+				"pc:r",
+				"Package Control: Remove Package"
+			],
+			[
+				"nginx",
+				"Set Syntax: nginx"
+			],
+			[
+				"ss:n",
+				"Set Syntax: nginx"
+			],
+			[
+				"ss:sh",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"c",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"ctags",
+				"CTags: Show Symbols (all)"
+			],
+			[
+				"",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"GoSublime: ",
+				"GoSublime: Goto Definition"
+			],
+			[
+				"GoSublime: gd",
+				"GoSublime: Goto Definition"
+			],
+			[
+				"gs:g",
+				"GoSublime: Goto Definition"
+			],
+			[
+				"remove",
+				"GoSublime: Add/Remove package"
+			],
+			[
+				"proje",
+				"Project: Save As"
+			],
+			[
+				"addp",
+				"GoSublime: Add/Remove package"
+			],
+			[
+				"ss:gosu",
+				"Set Syntax: GoSublime: Go"
+			],
+			[
+				"pack",
+				"GoSublime: Add/Remove package"
+			],
+			[
+				"s",
+				"Set Syntax: GoSublime: Go"
+			],
+			[
+				"set syntax:go",
+				"Set Syntax: Go"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/jerryb/GoPath/src/freshncp.com/weixinapi",
+		"/Users/jerryb/GoPath/src/github.com/go-martini/martini"
+	],
+	"file_history":
+	[
+		"/Users/jerryb/GoPath/src/freshncp.com/weixinapi/wxapi.go",
+		"/Users/jerryb/GoPath/src/freshncp.com/weixinapi/weixinapi.go",
+		"/Users/jerryb/GoPath/src/freshncp.com/weixinapi/public/index.html",
+		"/Users/jerryb/Downloads/run.bat-2.exe",
+		"/Users/jerryb/Downloads/run.bat.exe",
+		"/Users/jerryb/Downloads/run.bat-3.exe",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/public/foundation/5.5.0/js/vendor/jquery.js",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/public/foundation/5.5.0/js/vendor/selectivizr.js",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/public/foundation/5.5.0/js/vendor/nwmatcher.min.js",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/public/foundation/5.5.0/js/vendor/jquery-1.11.2.min.js",
+		"/Users/jerryb/Downloads/AdventureWorksDW2012-Data-01.sql",
+		"/Users/jerryb/Downloads/AdventureWorksDW2012-Data-033.sql",
+		"/Users/jerryb/Downloads/AdventureWorksDW2012-Data-03.sql",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/cms.go",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/public/index.html",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/controllers/product.go",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/models/product.go",
+		"/Users/jerryb/Downloads/Analysis.ps1",
+		"/Users/jerryb/Downloads/GH.OpenShare.Core.js",
+		"/Users/jerryb/Downloads/AW Multidimensional Models SQL Server 2014/Standard/AWDW2014Multidimensional-SE/Adventure Works DW.ds",
+		"/Users/jerryb/Downloads/AW Multidimensional Models SQL Server 2014/Standard/AWDW2014Multidimensional-SE/Adventure Works.cube",
+		"/opt/local/go/src/pkg/encoding/xml/read_test.go",
+		"/opt/local/go/src/pkg/syscall/mksyscall_windows.go",
+		"/Users/jerryb/Downloads/toolkit-2.1.2/tests/runner.js",
+		"/Users/jerryb/Library/Application Support/Sublime Text 3/Packages/DashDoc/Default (OSX).sublime-keymap",
+		"/Users/jerryb/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/Default (OSX).sublime-keymap",
+		"/Users/jerryb/Documents/Study/foundation-5.4.7/css/foundation.css",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/public/foundation-5.4.7/css/foundation.css",
+		"/Users/jerryb/Desktop/简体字库.txt",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/cms.sublime-project",
+		"/Users/jerryb/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/jerryb/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/jerryb/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/cms.sublime-workspace",
+		"/Users/jerryb/Library/Application Support/Sublime Text 3/Packages/SublimeGDB/Default.sublime-keymap",
+		"/Users/jerryb/Library/Application Support/Sublime Text 3/Packages/SublimeGDB/SublimeGDB.sublime-settings",
+		"/Users/jerryb/Library/Application Support/Sublime Text 3/Packages/User/SublimeGDB.sublime-settings",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/templates/index.html",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/access.log",
+		"/Users/jerryb/Library/Application Support/Sublime Text 3/Packages/GoSublime/CHANGELOG.md",
+		"/Users/jerryb/GoPath/src/github.com/go-martini/martini/router.go",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/routes/product.go",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/public/foundation-5.4.7/js/foundation/foundation.js",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/templates/productlist.html",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/templates/productdetail.html",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/public/css/pure.css",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/public/css/pure-min.css",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/nohup.out",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/public/css/pure-min.js",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/public/js/jquery.js",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/public/js/jquery.min.js",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/templates/500.html",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/templates/401.html",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/templates/404.html",
+		"/Users/jerryb/GoPath/src/github.com/go-martini/martini/return_handler.go",
+		"/opt/local/go/src/pkg/go/doc/doc.go",
+		"/opt/local/go/src/pkg/expvar/expvar.go",
+		"/opt/local/go/src/pkg/runtime/extern.go",
+		"/opt/local/go/src/pkg/runtime/runtime.h",
+		"/opt/local/go/src/pkg/debug/gosym/symtab.go",
+		"/Volumes/Gallary/QEMU/OpenShare/Portal.qcow2",
+		"/Users/jerryb/GoPath/src/freshncp.com/cms/cms",
+		"/Users/jerryb/Downloads/opensharedemo.rdp",
+		"/Volumes/Gallary/Games/World of Warcraft/Cache/WDB/zhCN/creaturecache.wdb",
+		"/Users/jerryb/Documents/Runmont/Projects/OpenShare/svn/OpenShare/CentralAdmin/Code/Common/BaseHandler.cs",
+		"/Volumes/Gallary/Games/World of Warcraft/Cache/WDB/zhCN/npccache.wdb",
+		"/Volumes/Expansion Drive/OpenShare/setup/GH.SetupConfigWizard.exe.config",
+		"/Users/jerryb/Aws/var/named/berkaroad.com.zone",
+		"/Users/jerryb/Aws/launch.sh",
+		"/Users/jerryb/Aws/shangwang/authorized_keys",
+		"/Users/jerryb/Aws/shangwang/shangwang.ppk",
+		"/Users/jerryb/Aws/jerryb.pem",
+		"/Users/jerryb/Aws/shangwang.pem",
+		"/Users/jerryb/Desktop/id-water.txt",
+		"/Users/jerryb/Downloads/SafeMgr_S60V3_V3_80_1128_TomPDA.sisx",
+		"/Users/jerryb/Downloads/att.dospy.com",
+		"/Users/jerryb/Desktop/FeaturePacks.ps1",
+		"/Users/jerryb/Library/Application Support/GoAgentX/goagent/proxy.ini",
+		"/Users/jerryb/GoPath/src/ninnovate.com/chongmingtechan/main",
+		"/Users/jerryb/Desktop/AddTenant.ps1",
+		"/Users/jerryb/Desktop/SearchService.ps1",
+		"/Users/jerryb/Desktop/UserProfileService.ps1",
+		"/Users/jerryb/Desktop/partitionedUPAcreation.ps1",
+		"/Users/jerryb/Desktop/OtherService.ps1",
+		"/Users/jerryb/Desktop/NonPartitionedServices.ps1",
+		"/Users/jerryb/Desktop/FarmSettings.ps1",
+		"/Users/jerryb/Desktop/FarmCreation.ps1",
+		"/Users/jerryb/Library/Application Support/GoAgentX/Profiles/714CAE01-FA41-4B7E-BF0A-658B90E28BC1.json",
+		"/Users/jerryb/aliyun/install.sh",
+		"/Users/jerryb/Aws/ssh_jerryb.sh",
+		"/Volumes/UDisk/myentunnel/myentunnel.ini",
+		"/Users/jerryb/Aws/ssh_root.sh",
+		"/Users/jerryb/Aws/portlist.md",
+		"/Users/jerryb/Aws/jerryb/authorized_keys",
+		"/Users/jerryb/Aws/ssh_shangwang.sh",
+		"/Users/jerryb/Aws/launchaws.sh",
+		"/Users/jerryb/Aws/jerryb.pub",
+		"/Users/jerryb/Documents/Aws/launchaws.sh",
+		"/Users/jerryb/Documents/launchaws.sh",
+		"/Users/jerryb/aliyun/main.go",
+		"/Library/Python/2.7/site-packages/mysql_utilities-1.4.3-py2.7.egg-info",
+		"/Library/Python/2.7/site-packages/mysql/utilities/exception.py",
+		"/Users/jerryb/GoPath/src/github.com/go-sql-driver/mysql/README.md",
+		"/Users/jerryb/Documents/goagentx.crx",
+		"/Users/jerryb/Projects/lucene/src/lucene/indexsearch.go",
+		"/Users/jerryb/Projects/lucene/src/lucene/filter.go",
+		"/Users/jerryb/GoPath/src/github.com/go-martini/martini/env.go",
+		"/Users/jerryb/Projects/lucene/src/lucene/lucene_test.go",
+		"/Users/jerryb/GoPath/src/github.com/go-martini/martini/env_test.go",
+		"/Users/jerryb/Library/Application Support/Sublime Text 3/Packages/GoSublime/Default (OSX).sublime-keymap",
+		"/Users/jerryb/Projects/lucene/lucene.go",
+		"/Users/jerryb/GitHub/blog/src/blog/README.md",
+		"/Users/jerryb/GitHub/go-blog/src/blog/blog.go",
+		"/Users/jerryb/GitHub/go-blog/install.sh",
+		"/Users/jerryb/GoPath/src/code.google.com/p/go.blog/blog/appengine.go",
+		"/Users/jerryb/Library/Application Support/Sublime Text 3/Packages/GoSublime/USAGE.md",
+		"/Users/jerryb/Library/Application Support/Sublime Text 3/Packages/User/GoSublime.sublime-settings",
+		"/Users/jerryb/Downloads/nginx-release-centos-6-0.el6.ngx.noarch.rpm",
+		"/Users/jerryb/aliyun/blog.conf",
+		"/Users/jerryb/aliyun/auto_fdisk.sh",
+		"/Users/jerryb/aliyun/autodisk.sh",
+		"/Users/jerryb/Projects/test1.go",
+		"/Users/jerryb/Projects/aliyun/web1.sh",
+		"/Users/jerryb/Projects/aliyun/fstab",
+		"/Users/jerryb/Projects/aliyun/install.sh",
+		"/Users/jerryb/Projects/aliyun/golang.sh",
+		"/Users/jerryb/Downloads/proxy.pac",
+		"/Users/jerryb/GoPath/src/github.com/go-martini/martini/martini.go"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"strconv.",
+			"IDENTITY_INSERT",
+			"martini.Params",
+			"li",
+			"alt+right",
+			"right",
+			"/",
+			"ctrl+space",
+			"show",
+			"pub",
+			"pu b",
+			"publish",
+			"ninnovate",
+			"openshare.com",
+			"searchAcctPwd",
+			"searchpwd",
+			"SrchCAcctPwd",
+			"  $env:searchAcctPwd",
+			"go sql driver",
+			"click"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ninnovate.com"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "assis.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2677,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1255,
+								1255
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 988.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "jsapi.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1045,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								584,
+								584
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 127.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "msgcrypt.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9979,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1598,
+								1608
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 752.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "weixinapi.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3092,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2693,
+								2696
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 954.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.9o:///Users/jerryb/GoPath/src/freshncp.com/cms":
+	{
+		"height": 129.0
+	},
+	"output.9o:///Users/jerryb/GoPath/src/freshncp.com/cms/controllers":
+	{
+		"height": 100.0
+	},
+	"output.9o:///Users/jerryb/GoPath/src/github.com/go-martini/martini":
+	{
+		"height": 100.0
+	},
+	"output.9o:///Users/jerryb/GoPath/src/ninnovate.com/chongmingtechan":
+	{
+		"height": 100.0
+	},
+	"output.9o:///Users/jerryb/Projects":
+	{
+		"height": 100.0
+	},
+	"output.9o:///Users/jerryb/Projects/lucene":
+	{
+		"height": 100.0
+	},
+	"output.9o:///Users/jerryb/Projects/lucene/src/lucene":
+	{
+		"height": 100.0
+	},
+	"output.GoSublime-main-output":
+	{
+		"height": 100.0
+	},
+	"output.GoSublime-output":
+	{
+		"height": 100.0
+	},
+	"output.GsComplete.completion-hint-output":
+	{
+		"height": 100.0
+	},
+	"output.GsDoc-output-output":
+	{
+		"height": 100.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "weixinapi.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "Params",
+		"selected_items":
+		[
+			[
+				"Params",
+				"ParamList"
+			]
+		],
+		"width": 413.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 239.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
