@@ -3,7 +3,7 @@ package weixinapi
 import (
 	"crypto/sha1"
 	"encoding/hex"
-	"fmt"
+	"log"
 	"strconv"
 	"strings"
 )
@@ -28,7 +28,7 @@ func (self *WXBizJsApi) GenerateApiConfig() (JsApiConfig, error) {
 	noncestr := GenerateRandomString(16)
 	timestamp := GenerateTimestamp()
 	tmpstr := "jsapi_ticket=" + self.JsApiTicket + "&noncestr=" + noncestr + "&timestamp=" + strconv.Itoa(timestamp) + "&url=" + self.Url
-	fmt.Println("JsApiConfig_Signature_Raw=" + tmpstr)
+	log.Println("JsApiConfig_Signature_Raw=" + tmpstr)
 	hashcode := ""
 	cryptor := sha1.New()
 	cryptor.Write([]byte(tmpstr))

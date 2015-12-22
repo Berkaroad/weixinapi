@@ -8,7 +8,7 @@ import (
 	"encoding/hex"
 	"encoding/xml"
 	"errors"
-	"fmt"
+	"log"
 	"sort"
 	"strings"
 	"time"
@@ -27,20 +27,12 @@ const (
 	WXBizMsgCrypt_EncodeBase64_Error      = "-40009"
 	WXBizMsgCrypt_DecodeBase64_Error      = "-40010"
 )
+
 const (
 	MsgType_Text     = "text"
 	MsgType_Location = "location"
 	MsgType_Link     = "link"
 )
-
-// 消息基类
-type baseMessage struct {
-	ToUserName   CDATAText     `xml:"ToUserName"`
-	FromUserName CDATAText     `xml:"FromUserName"`
-	CreateTime   time.Duration `xml:"CreateTime"`
-	MsgType      CDATAText     `xml:"MsgType"`
-	MsgId        int           `xml:"MsgId"`
-}
 
 // 加密的请求消息
 type EncryptRequestMessage struct {
@@ -79,44 +71,6 @@ func NewEncryptResponseMessage(encrypt string, msgSignature string, timestamp st
 	return instance
 }
 
-// 文本响应消息
-type TextResponseMessage struct {
-	XMLName xml.Name `xml:"xml"`
-	baseMessage
-	Content CDATAText `xml:"Content"`
-}
-
-func NewTextResponseMessage(toUserName string, fromUserName string, createTime time.Duration, content string, msgId int) TextResponseMessage {
-	return TextResponseMessage{baseMessage: baseMessage{ToUserName: NewCDATAText(toUserName), FromUserName: NewCDATAText(fromUserName), CreateTime: createTime, MsgType: NewCDATAText("text"), MsgId: msgId}, Content: NewCDATAText(content)}
-}
-
-// 位置响应消息
-type LocationResponseMessage struct {
-	XMLName xml.Name `xml:"xml"`
-	baseMessage
-	Location_X float64   `xml:"Location_X"`
-	Location_Y float64   `xml:"Location_Y"`
-	Scale      int       `xml:"Scale"`
-	Label      CDATAText `xml:"Label"`
-}
-
-func NewLocationResponseMessage(toUserName string, fromUserName string, createTime time.Duration, location_X float64, location_Y float64, scale int, label string, msgId int) LocationResponseMessage {
-	return LocationResponseMessage{baseMessage: baseMessage{ToUserName: NewCDATAText(toUserName), FromUserName: NewCDATAText(fromUserName), CreateTime: createTime, MsgType: NewCDATAText("location"), MsgId: msgId}, Location_X: location_X, Location_Y: location_Y, Scale: scale, Label: NewCDATAText(label)}
-}
-
-// 链接响应消息
-type LinkResponseMessage struct {
-	XMLName xml.Name `xml:"xml"`
-	baseMessage
-	Title       CDATAText `xml:"Title"`
-	Description CDATAText `xml:"Description"`
-	Url         CDATAText `xml:"Url"`
-}
-
-func NewLinkResponseMessage(toUserName string, fromUserName string, createTime time.Duration, title string, description string, url string, msgId int) LinkResponseMessage {
-	return LinkResponseMessage{baseMessage: baseMessage{ToUserName: NewCDATAText(toUserName), FromUserName: NewCDATAText(fromUserName), CreateTime: createTime, MsgType: NewCDATAText("link"), MsgId: msgId}, Title: NewCDATAText(title), Description: NewCDATAText(description), Url: NewCDATAText(url)}
-}
-
 // Verify Signature
 func VerifySignature(signature string, token string, timestamp string, nonce string) bool {
 	tmpArr := []string{token, timestamp, nonce}
@@ -153,11 +107,10 @@ func GenarateMsgSignature(token string, timestamp string, nonce string, msgEncry
 	sort.Strings(tmpArr)
 	tmpStr := strings.Join(tmpArr, "")
 	hashcode := ""
-	defer func() (string, error) {
+	defer func() {
 		if r := recover(); r != nil {
-			return "", errors.New(WXBizMsgCrypt_ComputeSignature_Error)
+			log.Println("GenarateMsgSignature error! code:", WXBizMsgCrypt_ComputeSignature_Error)
 		}
-		return hashcode, nil
 	}()
 	cryptor := sha1.New()
 	cryptor.Write([]byte(tmpStr))
@@ -166,53 +119,17 @@ func GenarateMsgSignature(token string, timestamp string, nonce string, msgEncry
 	return hashcode, nil
 }
 
-// Weixin Message Crypt
-type WXBizMsgCrypt struct {
-	AppId          string
-	EncodingAESKey string
-	Token          string
-}
-
-func NewWXBizMsgCrypt(appId string, encodingAESKey string, token string) WXBizMsgCrypt {
-	return WXBizMsgCrypt{AppId: appId, EncodingAESKey: encodingAESKey, Token: token}
-}
-
-// Encrypt Text Message
-func (self *WXBizMsgCrypt) EncryptTextMsg(replyMsg TextResponseMessage, timestamp string, nonce string) (string, error) {
-	bReplyMsg, _ := xml.Marshal(&replyMsg)
-	sReplyMsg := string(bReplyMsg)
-	fmt.Println("raw_message=" + sReplyMsg)
-	result, err := self.EncryptMsg(sReplyMsg, timestamp, nonce)
-	fmt.Println("encrypt_message=" + result)
-	return result, err
-}
-
-// Encrypt Location Message
-func (self *WXBizMsgCrypt) EncryptLocationMsg(replyMsg LocationResponseMessage, timestamp string, nonce string) (string, error) {
-	bReplyMsg, _ := xml.Marshal(&replyMsg)
-	sReplyMsg := string(bReplyMsg)
-	fmt.Println("raw_message=" + sReplyMsg)
-	result, err := self.EncryptMsg(sReplyMsg, timestamp, nonce)
-	fmt.Println("encrypt_message=" + result)
-	return result, err
-}
-
-// Encrypt Link Message
-func (self *WXBizMsgCrypt) EncryptLinkMsg(replyMsg LinkResponseMessage, timestamp string, nonce string) (string, error) {
-	bReplyMsg, _ := xml.Marshal(&replyMsg)
-	sReplyMsg := string(bReplyMsg)
-	fmt.Println("raw_message=" + sReplyMsg)
-	result, err := self.EncryptMsg(sReplyMsg, timestamp, nonce)
-	fmt.Println("encrypt_message=" + result)
-	return result, err
-}
-
 // Encrypt Message
-func (self *WXBizMsgCrypt) EncryptMsg(replyMsg string, timestamp string, nonce string) (string, error) {
-	key, _ := base64.StdEncoding.DecodeString(self.EncodingAESKey + "=")
+func EncryptMsg(config WXAPIConfig, replyMsg string, timestamp string, nonce string) (string, error) {
+	defer func() {
+		if r := recover(); r != nil {
+			log.Println("EncryptMsg error! code:", WXBizMsgCrypt_EncryptAES_Error)
+		}
+	}()
+	key, _ := base64.StdEncoding.DecodeString(config.EncodingAESKey + "=")
 	random_str := GenerateRandomString(16)
 	bRand := []byte(random_str)
-	bAppid := []byte(self.AppId)
+	bAppid := []byte(config.AppId)
 	bReplyMsg := []byte(replyMsg)
 	bMsgLen := Int32ToByteArray(HostToNetworkOrderInt32(int32(len(bReplyMsg))))
 	bMsg := make([]byte, len(bRand)+len(bMsgLen)+len(bAppid)+len(bReplyMsg))
@@ -237,16 +154,22 @@ func (self *WXBizMsgCrypt) EncryptMsg(replyMsg string, timestamp string, nonce s
 
 	encryptMsgBody := base64.StdEncoding.EncodeToString(encrypt_buffer)
 	// 生成安全签名
-	msgSignature, _ := GenarateMsgSignature(self.Token, timestamp, nonce, encryptMsgBody)
+	msgSignature, _ := GenarateMsgSignature(config.Token, timestamp, nonce, encryptMsgBody)
 	encryptMsg := NewEncryptResponseMessage(encryptMsgBody, msgSignature, timestamp, nonce)
 	bEncryptMsg, _ := xml.Marshal(&encryptMsg)
 	return string(bEncryptMsg), nil
 }
 
 // Descrypt Message
-func (self *WXBizMsgCrypt) DecryptMsg(msgSignature string, timestamp string, nonce string, encryptMsg EncryptRequestMessage) (RequestMessage, error) {
-	key, _ := base64.StdEncoding.DecodeString(self.EncodingAESKey + "=")
-	if isValid := VerifyMsgSignature(msgSignature, self.Token, timestamp, nonce, encryptMsg.Encrypt); isValid {
+func DecryptMsg(config WXAPIConfig, msgSignature string, timestamp string, nonce string, encryptMsg EncryptRequestMessage) (RequestMessage, error) {
+	defer func() {
+		if r := recover(); r != nil {
+			log.Println("DecryptMsg error! code:", WXBizMsgCrypt_DecryptAES_Error)
+		}
+	}()
+
+	key, _ := base64.StdEncoding.DecodeString(config.EncodingAESKey + "=")
+	if isValid := VerifyMsgSignature(msgSignature, config.Token, timestamp, nonce, encryptMsg.Encrypt); isValid {
 		encryptMsgBody_buffer, _ := base64.StdEncoding.DecodeString(encryptMsg.Encrypt)
 		plain_buffer := make([]byte, len(encryptMsgBody_buffer))
 		block, _ := aes.NewCipher(key)
@@ -257,14 +180,12 @@ func (self *WXBizMsgCrypt) DecryptMsg(msgSignature string, timestamp string, non
 			pad = 0
 		}
 		plain_buffer = plain_buffer[:len(plain_buffer)-pad]
-
 		message_len := int(NetworkToHostOrderInt32(ByteArrayToInt32(plain_buffer, 16)))
-
 		bMsg := make([]byte, message_len)
 		bAppid := make([]byte, len(plain_buffer)-20-message_len)
 		copy(bMsg, plain_buffer[20:message_len+20])
 		copy(bAppid, plain_buffer[20+message_len:])
-		if string(bAppid) == self.AppId {
+		if string(bAppid) == config.AppId {
 			plainMsg := RequestMessage{}
 			xml.Unmarshal(bMsg, &plainMsg)
 			return plainMsg, nil
