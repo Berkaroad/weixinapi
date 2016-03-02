@@ -32,6 +32,7 @@ const (
 	MsgType_Text     = "text"
 	MsgType_Location = "location"
 	MsgType_Link     = "link"
+	MsgType_Event    = "event"
 )
 
 // 加密的请求消息

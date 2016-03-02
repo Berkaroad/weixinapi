@@ -26,22 +26,6 @@ func GenerateRandomString(length int) string {
 	return random_str
 }
 
-// 生成指定长度的随机Hex字符串
-func GenerateRandomHexString(length int) string {
-	code_serial := "0123456789abcdef"
-	random_str := ""
-	for i := 0; i < length; i++ {
-		rand.Seed(time.Now().UnixNano())
-		random_str += string(code_serial[rand.Intn(len(code_serial))])
-	}
-	return random_str
-}
-
-// 生成Guid:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-func GenerateGuidString() string {
-	return GenerateRandomHexString(8) + "-" + GenerateRandomHexString(4) + "-" + GenerateRandomHexString(4) + "-" + GenerateRandomHexString(4) + "-" + GenerateRandomHexString(12)
-}
-
 // 生成时间戳
 func GenerateTimestamp() int {
 	return int(time.Now().Unix())
